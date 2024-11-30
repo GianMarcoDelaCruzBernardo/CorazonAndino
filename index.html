@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón Andino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+</head>
+
+<body>
+    <!-- Menú superior -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Corazón Andino" class="logo" onclick="location.href='index.html'">
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                    <li><a href="danzas.html">Danzas</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+            <!-- Íconos en la esquina superior derecha -->
+            <div class="icon-container">
+                <a href="mailto:Corazonandino24@gmail.com" class="icon" aria-label="Mensaje">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+                <div class="icon-container">
+                <a href="#" class="icon" id="menu-toggle" aria-label="Menú"><i class="fas fa-bars"></i></a>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de inicio con imagen de fondo -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Corazón Andino</h1>
+            <p>Bienvenidos a la comunidad Andinista, sumérgete en nuestra diversa cultura y tradiciones</p>
+            <a href="Nosotros.html" class="btn-primary">Descubrir más</a>
+        </div>
+    </section>
+
+    <!-- Sección de servicios -->
+    <main>
+        <section id="Indice" class="services">
+            <div class="container">
+                <h2>Indice:</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <img src="img/blog3.jpeg" alt="Organización de Eventos">
+                        <h3>Eventos y Festivales</h3>
+                        <p>Aquí encontraras los diferentes concursos y festivales de los cuales hemos participado por invitaciones de agrupaciones folclóricas y municipalidades distritales.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/blog2.jpeg" alt="Clases de Danza">
+                        <h3>Danzas</h3>
+                        <p>Aquí encontraras algunas danzas que hemos bailado oficialmente en escenarios, además de la reseña e información de la cultura y tradición de dichas danzas. </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/blog1.jpeg" alt="Artesanías">
+                        <h3>Acerca de Nosotros</h3>
+                        <p>Conoce más a la familia Andinista, sumérgete en nuestra historia y se parte de esta gran familia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;Copyright © 2024 Corazón Andino A.F. una Asociacion folclorica dedicada a la difuncion de la cultura peruana a traves del baile y el arte.Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61564878155112&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@corazon_andino24?_t=8raaFAzkAD9&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/corazon_andino24?igsh=MXRlbWl0bDExbnB4eQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/922753808" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

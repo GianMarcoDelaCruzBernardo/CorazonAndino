@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: top 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .logo-container {
+    display: flex;
+    position: relative;
+    left: -280px;
+}
+
+.navbar .logo {
+    width: 138px;
+    transition: transform 0.9s ease;
+}
+
+/* Menú */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff5733;
+    border-radius: 5px;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Íconos en la esquina superior derecha */
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-container a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-container a:hover {
+    color: #ff5733;
+    transform: scale(1.1);
+}
+
+/* Title Section */
+.titulo-danzas {
+    margin: 120px 0 20px;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.descripcion-danzas {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Contenedor para las dos imágenes alineadas horizontalmente */
+.imagenes-danzas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.pol, .imagen-principal {
+    width: 30%;  /* Tamaño igual para ambas imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Danzas Section */
+.danzas-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.danza-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.danza-imagen {
+    position: relative;
+    width: 40%;
+    text-align: center;
+}
+
+.carnaval-titulo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.danza-imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.danza-texto {
+    width: 60%;
+}
+
+.danza-texto p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .danza-item {
+        flex-direction: column;
+    }
+
+    .danza-imagen {
+        width: 100%;
+    }
+
+    .danza-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagenes-danzas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pol, .imagen-principal {
+        width: 80%;  /* Ajuste para pantallas pequeñas */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6347;
+    transform: scale(1.2);
+}
+
+/* Efecto de desplazamiento en el pie de página */
+.footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff5733;
+}
+/* Menú en dispositivos pequeños */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px; /* Justo debajo de la barra de navegación */
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar .logo {
+        width: 120px;
+    }
+    .icon-container {
+        justify-content: flex-start !important; /* Fuerza que se alineen a la izquierda */
+        margin-left: -10px !important; /* Ajusta el margen para moverlos */
+    }
+    .icon-container a {
+        margin-right: 10px; /* Reduce el espacio entre íconos, si es necesario */
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .navbar ul li a:hover {
+        background-color: #ff5733;
+        transform: scale(1.05);
+    }
+}
